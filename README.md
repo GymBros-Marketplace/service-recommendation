@@ -1,4 +1,15 @@
-# Welcome to your organization's demo respository
-This code repository (or "repo") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
+Сервис для рекомендации товаров пользователям
 
-The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency.
+Запустить
+```
+docker-compose up --build
+```
+
+Тестирование
+```
+curl -X 'POST' \
+    'http://localhost:8001/recommendations/' \
+    -H 'accept: application/json' \
+    -H 'Content-Type: application/json' \
+    -d '{"user_id": 123, "item_ids": [1, 2, 3, 4, 5]}'
+```
