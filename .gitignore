@@ -13,7 +13,7 @@ dist/
 .DS_Store
 .vscode
 .idea
-.venv
+*venv
 .env*
 
 # Unit test / coverage reports
@@ -22,3 +22,6 @@ dist/
 
 # Temporary files for local users
 tmp/
+
+# Training data
+data
