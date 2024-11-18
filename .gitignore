@@ -24,4 +24,4 @@ dist/
 tmp/
 
 # Training data
-data
+*data

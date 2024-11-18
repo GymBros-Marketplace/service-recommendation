@@ -8,8 +8,15 @@ docker-compose up --build
 Тестирование
 ```
 curl -X 'POST' \
-    'http://localhost:8001/recommendations/' \
+    'http://localhost:8001/api/recommend/' \
     -H 'accept: application/json' \
     -H 'Content-Type: application/json' \
-    -d '{"user_id": 123, "item_ids": [1, 2, 3, 4, 5]}'
+    -d '{"user_id": 123}'
+```
+
+```
+curl -X 'GET' \
+    'http://localhost:8001/api/healthcheck/' \
+    -H 'accept: application/json' \
+    -H 'Content-Type: application/json' \
 ```
